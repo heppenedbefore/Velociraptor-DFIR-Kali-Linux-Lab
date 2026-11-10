@@ -1,0 +1,65 @@
+{
+  "environment": {
+    "platform": "Kali Linux Rolling 2026.3 (Linux AMD64)",
+    "virtualization": "UTM on macOS",
+    "velociraptor_version": "0.77.3",
+    "deployment_scope": "One local Linux endpoint"
+  },
+  "server_collections": [
+    {
+      "artifact": "Generic.Client.Info",
+      "rows": 22,
+      "state": "FINISHED"
+    },
+    {
+      "artifact": "Linux.Sys.Users",
+      "rows": 59,
+      "state": "FINISHED"
+    },
+    {
+      "artifact": "Linux.Sys.LastUserLogin",
+      "rows": 41,
+      "state": "FINISHED"
+    },
+    {
+      "artifact": "Linux.Syslog.SSHLogin",
+      "rows": 0,
+      "state": "FINISHED"
+    },
+    {
+      "artifact": "Generic.Collectors.File",
+      "files_acquired": 2,
+      "state": "FINISHED"
+    },
+    {
+      "artifact": "System.VFS.ListDirectory",
+      "listing_rows": 2,
+      "stats_rows": 1,
+      "state": "FINISHED"
+    }
+  ],
+  "local_only_analyses": {
+    "running_processes": 219,
+    "tcp_entries": 17,
+    "authentication_events_classified": 271
+  },
+  "controlled_hunt": {
+    "scope": "one labeled Kali client",
+    "artifact": "Generic.Detection.HashHunter",
+    "expected_sample_matches": 2,
+    "final_state": "STOPPED",
+    "interpreted_as_malware": false
+  },
+  "notebook": {
+    "name": "Kali DFIR Investigation",
+    "successfully_analyzed_files": 2,
+    "rows_scanned": 2,
+    "artifact_source": "System.VFS.ListDirectory/Listing"
+  },
+  "custom_artifact": {
+    "name": "Lab.Kali.SafeInvestigation",
+    "catalog_presence": "observed in GUI",
+    "execution_of_all_sources": "not independently verified"
+  },
+  "provenance": "Sanitized summary prepared from verified local collection outputs and GUI screenshots. No raw endpoint telemetry is included."
+}

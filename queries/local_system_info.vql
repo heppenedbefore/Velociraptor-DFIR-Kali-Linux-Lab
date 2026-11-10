@@ -1,0 +1,3 @@
+-- Illustrative local VQL inspection. Run only on your authorized endpoint.
+-- This is separate from a server-dispatched collection flow.
+SELECT Hostname, OS, Architecture FROM info()

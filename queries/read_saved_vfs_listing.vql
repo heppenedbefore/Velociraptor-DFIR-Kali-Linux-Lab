@@ -1,0 +1,11 @@
+-- In a SERVER / NOTEBOOK context with READ_RESULTS permission:
+-- Replace BOTH identifiers with an existing authorized completed collection.
+-- The `Listing` source is essential: there is also a `Stats` source.
+SELECT Name, Size, Mode, mtime
+FROM flow_results(
+  client_id="C.REPLACE_WITH_YOUR_CLIENT_ID",
+  flow_id="F.REPLACE_WITH_YOUR_FLOW_ID",
+  artifact="System.VFS.ListDirectory",
+  source="Listing"
+)
+LIMIT 10

@@ -1,0 +1,17 @@
+{
+  "type": "authorized lab sample files",
+  "files": [
+    {
+      "name": "inventory.txt",
+      "size_bytes": 65,
+      "permissions": "-rw-rw-r--",
+      "sha256": "8fabbf94bbf8d15c5a32a191be7a6323388b8e217f90c6b884685fefc031af18"
+    },
+    {
+      "name": "notes.txt",
+      "size_bytes": 77,
+      "permissions": "-rw-rw-r--",
+      "sha256": "2ce9f19e27f66ab0d29b64eceebddee0ade3e52aff81516e7acabcbc22a187bb"
+    }
+  ]
+}
